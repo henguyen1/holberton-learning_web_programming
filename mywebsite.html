@@ -7,29 +7,36 @@
         font-size: 80px;
         text-align:center;
         color:cyan;
+        font-style: italic;
+        font-weight:bold;
+        text-decoration: underline;
       }
       #flex-container{
-        width:300px;
-        height:400px;
+        width:1000px;
+        height:1000px;
         display:flex;
         flex-wrap:wrap;
-        color:red;
+        background-color:red;
+        margin:0 auto;
       }
-      #flex-container>div{
-        width:100px;
-        height:100px;
-        color:red;
+      .meme{
+        height:400px;
+        width:400px;
+        background-color:cyan;
+        margin:0 auto;
+        position:relative;
+        top:40px;
       }
     </style>
     <title>Memes</title>
   </head>
     <body background="https://pixel.nymag.com/imgs/daily/selectall/2016/09/30/30-pepe-trump.w700.h700.jpg">
-      <h1 id="title"><b><i><u>Know Your Memes</b></i></u></h1>
+      <h1 id="title">Know Your Memes</h1>
       <div id="flex-container">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="meme"><a></a></div>
+        <div class="meme"><a></a></div>
+        <div class="meme"><a></a></div>
+        <div class="meme"><a></a></div>
       </div>
     </body>
 </html>
