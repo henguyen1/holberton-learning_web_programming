@@ -23,7 +23,12 @@ body{
   margin:0 auto;
 }
 .toolbar{
+  height:40px;
   min-width: 100%;
   position: sticky;
   background-color: black;
+  top:0;
+}
+#test{
+  font-size:500px;
 }
