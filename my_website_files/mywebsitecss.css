@@ -26,9 +26,13 @@ body{
   height:40px;
   min-width: 100%;
   position: sticky;
-  background-color: black;
+  background-color: white;
   top:0;
 }
-#test{
-  font-size:500px;
+.pull-down-box{
+  max-height:30px;
+  max-width:300px;
+  margin-left:10px;
+  background-color:green;
+  font-size:30px;
 }
