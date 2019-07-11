@@ -17,19 +17,21 @@
           margin-right:40px;
       }
       #third{
-          margin-top:186px;
+          position:absolute;
+          bottom:0;
+          min-width:100%;
           border-style:solid;
       }
     </style>
   </head>
   <body>
-    <div style="padding-bottom:10px;border-style:solid;">first</div>
+    <div style="padding-bottom:10px;border-style:solid;min-width:100%;">first</div>
     <div id="jumbo">hiya</div>
-    <div class="row" style="background-color:blue;height:200px;margin-right:0px;">
-      <div class="col">hi</div>
+    <div class="row" style="height:200px;min-width:100%;">
+      <div class="col" style="background-color:blue;">hi</div>
       <div class="col" style="background-color:white;">hi</div>
       <div class="col" style="background-color:red;">hi</div>
     </div>
-    <div id="third">third</div>
+    <div id="third" style="max-width:100%;">third</div>
   </body>
 </html>
