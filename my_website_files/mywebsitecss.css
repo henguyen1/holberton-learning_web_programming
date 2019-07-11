@@ -1,0 +1,29 @@
+#title{
+  font-size: 50px;
+  font-style: italic;
+  font-weight: bold;
+  text-align:center;
+}
+body{
+  background-color:rgb(250, 231, 182);
+}
+.pic-div{
+  height:250px;
+  width:250px;
+  background-color: cyan;
+  margin:0 auto;
+  margin-top:50px;
+}
+.flex_container{
+  width:700px;
+  height:700px;
+  display:flex;
+  flex-wrap:wrap;
+  background-color: ;
+  margin:0 auto;
+}
+.toolbar{
+  min-width: 100%;
+  position: sticky;
+  background-color: black;
+}
