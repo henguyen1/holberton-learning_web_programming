@@ -35,7 +35,6 @@ body{
   height:700px;
   display:flex;
   flex-wrap:wrap;
-  background-color: red;
   margin:0 auto;
 }
 .toolbar{
