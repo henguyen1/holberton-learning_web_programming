@@ -23,6 +23,16 @@ a:active{
 body{
   background-color:rgb(250, 231, 182);
 }
+.gap{
+  height:100px;
+}
+.dog-pic{
+  width:400;
+  height:400px;
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
+}
 .pic-div{
   height:250px;
   width:250px;
