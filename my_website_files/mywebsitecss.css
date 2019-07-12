@@ -71,7 +71,7 @@ body{
   display: block;
   width: 100%;
   border: none;
-  background-color: #4CAF50;
+  background-color: #46c7c0;
   font-size: 16px;
   cursor: pointer;
   text-align: center;
@@ -80,7 +80,7 @@ input {
   display: none;
 }
 ul.submenu {
-  max-height: 0;
+  max-height: 0px;
   overflow: hidden;
 }
 label {
@@ -89,7 +89,7 @@ label {
   cursor: pointer;
 }
 input:checked~ul.submenu {
-  max-height: 300px;
+  max-height: 270px;
   background-color:white;
 }
 #description{
