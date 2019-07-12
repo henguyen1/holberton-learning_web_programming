@@ -4,17 +4,25 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="mywebsitecss.css">
     <title>Shiba Inu</title>
+    <!-- FOR THE TYPES OF DOGS -->
+    <style>
+      ul > li{
+        position:relative;
+        margin-right: 40px;
+      }
+    </style>
+    <!-- FOR THE TYPES OF DOGS -->
   </head>
   <body>
     <!--TOOLBAR STUFF-->
     <div class="flex_container toolbar">
       <div class="pull-down-box">
-        <button type="button" class="block"><a href="mywebsite.html">Home</a></button>
+        <a href="mywebsite.html"><button type="button" class="block">Home</button></a>
       </div>
       <div class="pull-down-box">
         <input id="check01" type="checkbox" name="menu" />
         <button type="button" class="block"><label for="check01">My Favorite Types of Dogs</label></button>
-        <ul class="submenu">
+        <ul class="submenu" style="list-style: none"
           <li><a href="germanshepherd.html">German Shepherd</a></li>
           <li><a href="husky.html">Husky</a></li>
           <li><a href="pomeranian.html">Pomeranian</a></li>
@@ -23,7 +31,7 @@
         </ul>
       </div>
       <div class="pull-down-box">
-        <button type="button" class="block"><a href="about.html">About</a></button>
+      <a href="about.html"><button type="button" class="block">About</button></a>
       </div>
     </div>
     <!--       END OF TOOLBAR STUFF    -->
