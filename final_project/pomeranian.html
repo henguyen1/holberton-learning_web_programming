@@ -14,24 +14,38 @@
     <!-- FOR THE TYPES OF DOGS -->
   </head>
   <body>
+    <script>
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    </script>
     <!--TOOLBAR STUFF-->
-    <div class="flex_container toolbar">
-      <div class="pull-down-box">
-        <a href="mywebsite.html"><button type="button" class="block">Home</button></a>
-      </div>
-      <div class="pull-down-box">
-        <input id="check01" type="checkbox" name="menu" />
-        <button type="button" class="block"><label for="check01">My Favorite Types of Dogs</label></button>
-        <ul class="submenu" style="list-style: none">
-          <li><a href="germanshepherd.html">German Shepherd</a></li>
-          <li><a href="husky.html">Siberian Husky</a></li>
-          <li><a href="pomeranian.html">Pomeranian</a></li>
-          <li><a href="corgi.html">Corgi</a></li>
-          <li><a href="doge.html">Shiba Inu</li>
-        </ul>
-      </div>
-      <div class="pull-down-box">
-      <a href="about.html"><button type="button" class="block">About</button></a>
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#news">News</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="germanshepherd.html">German Shephered</a>
+          <a href="doge.html">Shiba Inu</a>
+          <a href="corgi.html">Corgi</a>
+          <a href="husky.html">Siberian Husky</a>
+          <a href="pomeranian.html">Pomeranian</a>
+        </div>
       </div>
     </div>
     <!--       END OF TOOLBAR STUFF    -->
