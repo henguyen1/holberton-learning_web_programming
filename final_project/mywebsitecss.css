@@ -21,33 +21,26 @@ a:active{
   text-align:center;
 }
 body{
-  background-color:rgb(207, 209, 212);
+  background-color:rgb(250, 231, 182);
 }
 .gap{
-  height:100px;
+  height:200px;
+  width:100%;
 }
-/*for the pictures in the favorite dogs page*/
 .dog-pic{
-  width:400px;
+  width:400;
   height:400px;
   margin-left: auto;
   margin-right: auto;
   display:block;
 }
-/* for the pictures in the home page*/
-.flex-div{
+.pic-div{
   height:250px;
   width:250px;
-  background-color: blue;
+  background-color: cyan;
   margin:0 auto;
   margin-top:50px;
 }
-#description{
-  text-align: center;
-  font-size: 40px;
-  font-style: italic;
-}
-/* the actual flex container hold containers of the pictures */
 .flex_container{
   width:700px;
   height:700px;
@@ -55,65 +48,61 @@ body{
   flex-wrap:wrap;
   margin:0 auto;
 }
-/* Don't touch anything below this*/
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  font-family: Arial, Helvetica, sans-serif;
+.toolbar{
+  height:80px;
+  min-width: 100%;
+  top:0;
+  justify-content: center;
+  display:flex;
+  flex-wrap:wrap;
+  background-color: #30323D;
+  position:absolute;
+  left:0;
+  right:0;
 }
-
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
+.pull-down-box{
+  min-height:30px;
+  min-width:30%;
+  max-height:30px;
+  max-width:30%;
+  margin-left:10px;
+  margin-top:2px;
+  font-size:25px;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
-/* AFFECTS DROPDOWN MENU */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-/* AFFECTS THE DROPDOWN MENU CONTENTS LIKE THE GERMAN SHEPHERD, CORGI AND STUFF */
-.dropdown .dropbtn {
-  cursor: pointer;
-  font-size: 16px;
+.block {
+  height:70px;
+  display: block;
+  width: 100%;
   border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
+  background-color: #30323D;
+  color:white;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
 }
-/* Affects the hover color of the home about and dropdown stuff*/
-.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-  background-color: red;
-}
-
-.dropdown-content {
+input {
   display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
 }
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
+ul.submenu {
+  max-height: 0;
+  max-height: 0px;
+  overflow: hidden;
+    list-style: none;
+}
+label {
+  position: relative;
   display: block;
-  text-align: left;
+  cursor: pointer;
 }
-
-.dropdown-content a:hover { /* Affects hover color of links in the dropdown menu */
-  background-color: #ddd;
+input:checked~ul.submenu {
+  max-height: 300px;
+  max-height: 270px;
+  background-color:white;
 }
-
-.show {
-  display: block;
+#description{
+  position:relative;
+  text-align: center;
+  font-size: 40px;
+  font-style: italic;
 }
