@@ -71,7 +71,7 @@ body{
   text-align: center;
 }
 .block {
-  height:70px;
+  height:77px;
   display: block;
   width: 100%;
   border: none;
@@ -81,14 +81,16 @@ body{
   cursor: pointer;
   text-align: center;
 }
+.block:hover{
+  background-color:red;
+}
 input {
   display: none;
 }
 ul.submenu {
-  max-height: 0;
   max-height: 0px;
   overflow: hidden;
-    list-style: none;
+  list-style: none;
 }
 label {
   position: relative;
@@ -96,9 +98,9 @@ label {
   cursor: pointer;
 }
 input:checked~ul.submenu {
-  max-height: 300px;
-  max-height: 270px;
-  background-color:white;
+  max-height: 340px;
+  background-color: #e3e1e1;
+  z-index: 1;
 }
 #description{
   position:relative;

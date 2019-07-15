@@ -14,24 +14,6 @@
     <!-- FOR THE TYPES OF DOGS -->
   </head>
   <body>
-    <!-- JAVASCRIPT -->
-    <script>
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-      window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
-          }
-        }
-      }
-    </script>
     <!--TOOLBAR STUFF-->
     <div class="flex_container toolbar">
       <div class="pull-down-box">
@@ -53,9 +35,6 @@
       </div>
     </div>
     <!--       END OF TOOLBAR STUFF    -->
-    <!--DON'T TOUCH-->
-    <div class="gap"></div>
-    <!--DON'T TOUCH-->
     <h1 style="text-align:center;font-size:40px;">The Corgi</h1>
     <a href="https://en.wikipedia.org/wiki/Welsh_Corgi"><img class="dog-pic"src="https://images.pexels.com/photos/164186/pexels-photo-164186.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"></a>
     <p style="text-align:center;">Click on the picture to go to wikipedia!</p>
