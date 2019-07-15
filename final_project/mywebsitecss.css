@@ -28,11 +28,9 @@ body{
   width:100%;
 }
 .dog-pic{
-  width:400;
   height:400px;
-  margin-left: auto;
-  margin-right: auto;
-  display:block;
+  position: absolute;
+  left:25%;
 }
 .pic-div{
   height:250px;
@@ -107,4 +105,9 @@ input:checked~ul.submenu {
   text-align: center;
   font-size: 40px;
   font-style: italic;
+}
+.wiki{
+  position:relative;
+  left:40%;
+  margin-top:450px;
 }

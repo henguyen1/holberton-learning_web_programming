@@ -14,24 +14,6 @@
     <!-- FOR THE TYPES OF DOGS -->
   </head>
   <body>
-    <!-- JAVASCRIPT -->
-    <script>
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-      window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
-          }
-        }
-      }
-    </script>
     <!--TOOLBAR STUFF-->
     <div class="flex_container toolbar">
       <div class="pull-down-box">
@@ -55,7 +37,7 @@
     <!--       END OF TOOLBAR STUFF    -->
     <h1 style="text-align:center;font-size:40px;">The Pomeranian</h1>
     <a href="https://en.wikipedia.org/wiki/Pomeranian_(dog)"><img class="dog-pic"src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12225627/Pomeranian-On-White-01.jpg"></a>
-    <p style="text-align:center;">Click on the picture to go to wikipedia!</p>
+    <p class="wiki">Click on the picture to go to wikipedia!</p>
     <div class="gap"></div>
     <p style="text-align:center;">I don't know why I like German Shepherds, but they are good.</p>
   </body>
