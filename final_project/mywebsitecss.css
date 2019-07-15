@@ -26,17 +26,19 @@ body{
 .gap{
   height:100px;
 }
+/*for the pictures in the favorite dogs page*/
 .dog-pic{
-  width:400;
+  width:400px;
   height:400px;
   margin-left: auto;
   margin-right: auto;
   display:block;
 }
-.pic-div{
+/* for the pictures in the home page*/
+.flex-div{
   height:250px;
   width:250px;
-  background-color: cyan;
+  background-color: blue;
   margin:0 auto;
   margin-top:50px;
 }
@@ -45,6 +47,7 @@ body{
   font-size: 40px;
   font-style: italic;
 }
+/* the actual flex container hold containers of the pictures */
 .flex_container{
   width:700px;
   height:700px;
@@ -67,12 +70,12 @@ body{
   padding: 14px 16px;
   text-decoration: none;
 }
-
+/* AFFECTS DROPDOWN MENU */
 .dropdown {
   float: left;
   overflow: hidden;
 }
-
+/* AFFECTS THE DROPDOWN MENU CONTENTS LIKE THE GERMAN SHEPHERD, CORGI AND STUFF */
 .dropdown .dropbtn {
   cursor: pointer;
   font-size: 16px;
@@ -84,7 +87,7 @@ body{
   font-family: inherit;
   margin: 0;
 }
-
+/* Affects the hover color of the home about and dropdown stuff*/
 .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
   background-color: red;
 }
@@ -107,7 +110,7 @@ body{
   text-align: left;
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover { /* Affects hover color of links in the dropdown menu */
   background-color: #ddd;
 }
 
