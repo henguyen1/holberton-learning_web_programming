@@ -29,8 +29,7 @@ body{
 }
 .dog-pic{
   height:400px;
-  position: absolute;
-  left:25%;
+  margin:0 auto;
 }
 .pic-div{
   height:250px;
@@ -38,6 +37,7 @@ body{
   background-color: cyan;
   margin:0 auto;
   margin-top:50px;
+  z-index: -1;
 }
 .flex_container{
   width:700px;
@@ -98,13 +98,14 @@ label {
 input:checked~ul.submenu {
   max-height: 340px;
   background-color: #e3e1e1;
-  z-index: 1;
 }
 #description{
   position:relative;
   text-align: center;
   font-size: 40px;
   font-style: italic;
+  margin-top:100px;
+  z-index: -1;
 }
 .wiki{
   position:relative;
