@@ -21,20 +21,22 @@ a:active{
   text-align:center;
 }
 body{
-  background-color:rgb(250, 231, 182);
+  background-color:#5C80BC;
 }
 .gap{
   height:200px;
   width:100%;
 }
 .dog-pic{
+  width:400;
   height:400px;
-  margin:0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
 }
 .pic-div{
   height:250px;
   width:250px;
-  background-color: cyan;
   margin:0 auto;
   margin-top:50px;
   z-index: -1;
@@ -106,9 +108,4 @@ input:checked~ul.submenu {
   font-style: italic;
   margin-top:100px;
   z-index: -1;
-}
-.wiki{
-  position:relative;
-  left:40%;
-  margin-top:450px;
 }
