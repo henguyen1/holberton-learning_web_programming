@@ -48,12 +48,15 @@ body{
   margin:0 auto;
 }
 .toolbar{
-  height:40px;
+  height:120px;
   min-width: 100%;
+  max-width: 100%;
   top:0;
   justify-content: center;
   display:flex;
   flex-wrap:wrap;
+  background-color: white;
+
 }
 .pull-down-box{
   min-height:30px;
@@ -76,22 +79,7 @@ body{
   cursor: pointer;
   text-align: center;
 }
-input {
-  display: none;
-}
-ul.submenu {
-  max-height: 0px;
-  overflow: hidden;
-}
-label {
-  position: relative;
-  display: block;
-  cursor: pointer;
-}
-input:checked~ul.submenu {
-  max-height: 270px;
-  background-color:white;
-}
+
 #description{
   text-align: center;
   font-size: 40px;
