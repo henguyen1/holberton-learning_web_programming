@@ -31,12 +31,6 @@ body{
   height:100px;
   width:100%;
 }
-.dog-pic{
-  width:400;
-  height:400px;
-}
-dog-desc{
-}
 .pic-div{
   height:250px;
   width:250px;
@@ -50,7 +44,6 @@ dog-desc{
   display:flex;
   flex-wrap:wrap;
   margin:0 auto;
-
 }
 .toolbar{
   height:80px;
@@ -115,4 +108,13 @@ input:checked~ul.submenu {
   font-style: italic;
   margin-top:100px;
   z-index: -1;
+}
+.dog-desc{
+height:400px;
+width:600px;
+background-color:#30323D;
+}
+.wiki-akc-link:hover{
+  color:red;
+  text-decoration:none;
 }
