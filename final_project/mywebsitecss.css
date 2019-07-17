@@ -1,22 +1,18 @@
-a:link:not(.dog-type-link){
+a:link:not(.dog-link){
   color:black;
   text-decoration:none;
 }
-a:visited:not(.dog-type-link){
+a:visited:not(.dog-link){
   color:black;
   text-decoration:none;
 }
-a:hover:not(.dog-type-link){
+a:hover:not(.dog-link){
   color:black;
   text-decoration:none;
 }
-a:active:not(.dog-type-link){
+a:active:not(.dog-link){
   color:rgb(62, 120, 214);
   text-decoration:none;
-}
-.text-link:hover{
-  color:	#e81515;
-  text-decoration: none;
 }
 .title{
   font-size: 50px;
@@ -112,4 +108,13 @@ input:checked~ul.submenu {
 height:400px;
 width:600px;
 background-color:#30323D;
+position:relative;
+left:200px;
+}
+.wiki-akc-div{
+  height:120px;
+  width:300px;
+  background-color:#30323D;
+  color:white;
+  text-align:center;
 }
