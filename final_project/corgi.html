@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" name="viewport" content="initial-scale=1">
-    <link rel="stylesheet" href="mywebsitecss.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <title>Corgis</title>
     <!-- FOR THE TYPES OF DOGS -->
     <style>
@@ -26,6 +26,131 @@
         color:#75a4f0;
         text-decoration: none;
       }
+      a:link:not(.dog-link){
+        color:black;
+        text-decoration:none;
+      }
+      a:visited:not(.dog-link){
+        color:black;
+        text-decoration:none;
+      }
+      a:hover:not(.dog-link){
+        color:black;
+        text-decoration:none;
+      }
+      a:active:not(.dog-link){
+        color:rgb(62, 120, 214);
+        text-decoration:none;
+      }
+      .title{
+        font-size: 50px;
+        font-style: italic;
+        font-weight: bold;
+        text-align:center;
+      }
+      body{
+        background-color:#5C80BC;
+        test-align:center;
+      }
+      .gap{
+        height:100px;
+        width:100%;
+      }
+      .pic-div{
+        height:250px;
+        width:250px;
+        margin:0 auto;
+        margin-top:50px;
+        z-index: -1;
+      }
+      .flex_container{
+        width:700px;
+        height:700px;
+        display:flex;
+        flex-wrap:wrap;
+        margin:0 auto;
+      }
+      .toolbar{
+        height:80px;
+        width: 97%;
+        top:0;
+        right:0;
+        justify-content: center;
+        display:flex;
+        flex-wrap:wrap;
+        background-color: #30323D;
+        position:absolute;
+        z-index:0;
+       }
+      .pull-down-box{
+        min-height:30px;
+        min-width:30%;
+        max-height:30px;
+        max-width:30%;
+        margin-left:10px;
+        margin-top:2px;
+        font-size:25px;
+        text-align: center;
+
+      }
+      .block {
+        height:77px;
+        display: block;
+        width: 100%;
+        border: none;
+        background-color: #30323D;
+        color:white;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+      }
+      .block:hover{
+        background-color:red;
+      }
+      input {
+        display: none;
+      }
+      ul.submenu {
+        max-height: 0px;
+        overflow: hidden;
+        list-style: none;
+      }
+      label {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        width:353px;
+        right:7px;
+        height:50px;
+        bottom:50px;
+        padding-top:70px;
+      }
+      input:checked~ul.submenu {
+        max-height: 340px;
+        background-color: #e3e1e1;
+      }
+      #description{
+        position:relative;
+        text-align: center;
+        font-size: 40px;
+        font-style: italic;
+        margin-top:100px;
+        z-index: -1;
+      }
+      .dog-desc{
+        height:400px;
+        width:600px;
+        background-color:#30323D;
+        position:relative;
+        left:200px;
+      }
+      .wiki-akc-div{
+        height:120px;
+        width:300px;
+        background-color:#30323D;
+        color:white;
+        text-align:center;
+      }
     </style>
     <!-- FOR THE TYPES OF DOGS -->
   </head>
@@ -40,7 +165,7 @@
       </div>
       <div class="pull-down-box">
         <input id="check01" type="checkbox" name="menu" />
-        <button type="button" class="block"><label for="check01">My Favorite Types of Dogs</label></button>
+        <button type="button" class="block"><label for="check01" style="font-weight:normal;">My Favorite Types of Dogs</label></button>
         <ul class="submenu">
           <li><a href="germanshepherd.html">German Shepherd</a></li>
           <li><a href="husky.html">Husky</a></li>
@@ -59,14 +184,14 @@
    <div class="flex_container" style="width:1400px;height:600px;position:relative;top:50px;">
     <img style="height:400px;width:500px;position:relative;left:150px;" src="https://images.pexels.com/photos/164186/pexels-photo-164186.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
     <div class="dog-desc">
-      <p style="position:relative;margin-left:30px;margin-top:23px;font-size:20px;color:white;">Average Lifespan: 12-13 years</p>
-      <p style="position:relative;margin-left:30px;margin-top:23px;font-size:20px;color:white;">Average Weight(Males): 22-31 lbs</p>
-      <p style="position:relative;margin-left:30px;margin-top:23px;font-size:20px;color:white;">Average weight(Females): 22-29 lbs</p>
-      <p style="position:relative;margin-left:30px;margin-top:23px;font-size:20px;color:white;">Height(Males): 10-12 in</p>
-      <p style="position:relative;margin-left:30px;margin-top:23px;font-size:20px;color:white;">Height(Females): 10-12 in</p>
-      <p style="position:relative;margin-left:30px;margin-top:23px;font-size:20px;color:white;">It's a <a class="dog-link" href="https://en.wikipedia.org/wiki/Herding_dog">herding dog</a></p>
-      <p style="position:relative;margin-left:30px;margin-top:23px;font-size:20px;color:white;">Originated in Germany</p>
-      <p style="position:relative;margin-left:30px;margin-top:23px;font-size:20px;color:white;">Rated 13th most popular by American Kennel Club</p>
+      <p style="position:relative;margin-left:30px;margin-top:20px;font-size:20px;color:white;">Average Lifespan: 12-13 years</p>
+      <p style="position:relative;margin-left:30px;margin-top:20px;font-size:20px;color:white;">Average Weight(Males): 22-31 lbs</p>
+      <p style="position:relative;margin-left:30px;margin-top:20px;font-size:20px;color:white;">Average weight(Females): 22-29 lbs</p>
+      <p style="position:relative;margin-left:30px;margin-top:20px;font-size:20px;color:white;">Height(Males): 10-12 in</p>
+      <p style="position:relative;margin-left:30px;margin-top:20px;font-size:20px;color:white;">Height(Females): 10-12 in</p>
+      <p style="position:relative;margin-left:30px;margin-top:20px;font-size:20px;color:white;">It's a <a class="dog-link" href="https://en.wikipedia.org/wiki/Herding_dog">herding dog</a></p>
+      <p style="position:relative;margin-left:30px;margin-top:20px;font-size:20px;color:white;">Originated in Germany</p>
+      <p style="position:relative;margin-left:30px;margin-top:20px;font-size:20px;color:white;">Rated 13th most popular by American Kennel Club</p>
     </div>
     <div class="wiki-akc-div" style="position:relative;right:950px;margin-top:500px;">
       <p> More Info/Sources <p>
