@@ -22,6 +22,7 @@ a:active:not(.dog-link){
 }
 body{
   background-color:#5C80BC;
+  test-align:center;
 }
 .gap{
   height:100px;
@@ -51,7 +52,7 @@ body{
   flex-wrap:wrap;
   background-color: #30323D;
   position:absolute;
-z-index:0;
+  z-index:0;
  }
 .pull-down-box{
   min-height:30px;
